@@ -36,5 +36,8 @@
       packages.x86_64-darwin.default = package {
         system = "x86_64-darwin";
       };
+      packages.aarch64-darwin.default = package {
+        system = "aarch64-darwin";
+      };
     };
 }
