@@ -1,0 +1,45 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1661262176,
+        "narHash": "sha256-42FXNd2B0QECaULG0Vx+oYzQ9euKcmlg2gmX2D+HbKI=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "b9fd420fa535fd254c6f1f26df770b32a9dc98b4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-22.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "pulumictl-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1656436009,
+        "narHash": "sha256-CZ0DnQUnyj8aoesFymc+Uhv+3vdQhdxb2YHElAyqGWE=",
+        "owner": "pulumi",
+        "repo": "pulumictl",
+        "rev": "fc811a0cb57795ee001b155e24b1bab9aa009822",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pulumi",
+        "ref": "v0.0.32",
+        "repo": "pulumictl",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "pulumictl-src": "pulumictl-src"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
