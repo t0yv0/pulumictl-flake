@@ -25,6 +25,7 @@
           name = "pulumictl-${ver}";
           version = "${ver}";
           src = pulumictl-src;
+          subPackages = [ "cmd/pulumictl" ];
           doCheck = false;
           vendorSha256 = "sha256-WzfTS68YIpoZYbm6i0USxXyEyR4px+hrNRbsCTXdJsk=";
           ldflags = ["-X" "github.com/pulumi/pulumictl/pkg/version.Version=${ver}"];
