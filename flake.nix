@@ -26,7 +26,7 @@
           version = "${ver}";
           src = pulumictl-src;
           doCheck = false;
-          vendorSha256 = "sha256-R1xrRH3GMR7xSUQ1Fsn9pLa729t5/gnPqAp8As7F+UI=";
+          vendorSha256 = "sha256-WzfTS68YIpoZYbm6i0USxXyEyR4px+hrNRbsCTXdJsk=";
           ldflags = ["-X" "github.com/pulumi/pulumictl/pkg/version.Version=${ver}"];
         };
     in {
