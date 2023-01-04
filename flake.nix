@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = github:NixOS/nixpkgs/nixos-22.05;
     pulumictl-src = {
-      url = "github:pulumi/pulumictl/v0.0.38";
+      url = "github:pulumi/pulumictl/v0.0.39";
       flake = false;
     };
   };
@@ -16,7 +16,7 @@
     }:
 
     let
-      ver = "0.0.38";
+      ver = "0.0.39";
 
       package = { system }:
         let
