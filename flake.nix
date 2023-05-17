@@ -2,9 +2,9 @@
   description = "A flake defining pulumictl build-from-source package";
 
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs/nixos-22.05;
+    nixpkgs.url = github:NixOS/nixpkgs/nixos-22.11;
     pulumictl-src = {
-      url = "github:pulumi/pulumictl/v0.0.39";
+      url = "github:pulumi/pulumictl/v0.0.42";
       flake = false;
     };
   };
@@ -16,12 +16,12 @@
     }:
 
     let
-      ver = "0.0.39";
+      ver = "0.0.42";
 
       package = { system }:
         let
           pkgs = import nixpkgs { system = system; };
-        in pkgs.buildGo118Module rec {
+        in pkgs.buildGoModule rec {
           name = "pulumictl-${ver}";
           version = "${ver}";
           src = pulumictl-src;
