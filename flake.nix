@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = github:NixOS/nixpkgs/nixos-22.11;
     pulumictl-src = {
-      url = "github:pulumi/pulumictl/v0.0.42";
+      url = "github:pulumi/pulumictl/v0.0.46";
       flake = false;
     };
   };
@@ -16,7 +16,7 @@
     }:
 
     let
-      ver = "0.0.42";
+      ver = "0.0.46";
 
       package = { system }:
         let
@@ -27,7 +27,7 @@
           src = pulumictl-src;
           subPackages = [ "cmd/pulumictl" ];
           doCheck = false;
-          vendorSha256 = "sha256-WzfTS68YIpoZYbm6i0USxXyEyR4px+hrNRbsCTXdJsk=";
+          vendorSha256 = "sha256-Wktr3TXSIIzbkiT3Gk5i4K58gahnxySi6ht30li+Z0o=";
           ldflags = ["-X" "github.com/pulumi/pulumictl/pkg/version.Version=${ver}"];
         };
     in {

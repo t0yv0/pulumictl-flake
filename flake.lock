@@ -19,16 +19,16 @@
     "pulumictl-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1675253980,
-        "narHash": "sha256-fs+etB/tzqzV3QbQKa4xqsAjtUkr1BdKtTNvRylnKaY=",
+        "lastModified": 1702625233,
+        "narHash": "sha256-7A6dx/5091FIQ2AB6C+Z2CjhTBx2e6iB21Du2u9EiHY=",
         "owner": "pulumi",
         "repo": "pulumictl",
-        "rev": "cfcf0476f9a7d683c635056d7fcac6d74300834a",
+        "rev": "2f75ae34f281de077a7fe19a5a836e8cab0d350c",
         "type": "github"
       },
       "original": {
         "owner": "pulumi",
-        "ref": "v0.0.42",
+        "ref": "v0.0.46",
         "repo": "pulumictl",
         "type": "github"
       }
